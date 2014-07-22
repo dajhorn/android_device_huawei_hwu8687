@@ -1,5 +1,25 @@
-# mount point	fstype	device	[device2]
-/cache	ext4	/dev/block/mmcblk0p15
-/data	ext4	/dev/block/mmcblk0p18
-/sdcard	vfat	/dev/block/mmcblk1
-/system	ext4	/dev/block/mmcblk0p17
+# CyanogenMod 10.2 (Jellybean MR2) recovery.fstab
+# for the Huawei Ascend Y215 model U8687.
+
+#/dev/block/mmcblk0p1   Unknown.
+#/dev/block/mmcblk0p2   Initial loader, SDCC2 HAL v1.0.12.
+#/dev/block/mmcblk0p3   /radio vfat	defaults,ro	defaults
+#/dev/block/mmcblk0p4   Extended partition information
+#/dev/block/mmcblk0p5   OEM_INFO, things like the IMEI.
+#/dev/block/mmcblk0p6   Qualcomm baseband.
+#/dev/block/mmcblk0p7   Zero, except for byte 5A at offset 0x00081928
+#/dev/block/mmcblk0p8   Zero, rmt_storage area?
+#/dev/block/mmcblk0p9   Blob, rmt_storage area?
+#/dev/block/mmcblk0p10  Blob, rmt_storage area?
+#/dev/block/mmcblk0p11  System loader, fastboot.
+#/dev/block/mmcblk0p14  Zero padding.
+
+/dev/block/mmcblk0p12  /boot         mtd   defaults  defaults
+/dev/block/mmcblk0p13  /recovery     mtd   defaults  defaults
+/dev/block/mmcblk0p15  /cache        ext4  defaults  defaults
+/dev/block/mmcblk0p16  /cust         ext4  defaults  defaults
+/dev/block/mmcblk0p17  /system       ext4  defaults  defaults
+/dev/block/mmcblk0p18  /data         ext4  defaults  defaults
+/dev/block/mmcblk0p19  /internal_sd  vfat  defaults  defaults
+
+/dev/block/mmcblk1     /external_sd  auto  defaults  defaults
